@@ -24,24 +24,6 @@ Implement a class called `Pet` that has:
 - `play()`: Increases happiness by a certain amount (e.g., 10).
 - `feed()`: Decreases hunger by a certain amount (e.g., 10).
 
-**Example:**
-```javascript
-class Pet {
-    constructor(name) {
-        this.name = name;
-        this.happiness = 50; // Default happiness
-        this.hunger = 50; // Default hunger
-    }
-
-    play() {
-        this.happiness += 10;
-    }
-
-    feed() {
-        this.hunger -= 10;
-    }
-}
-```
 ## Iteration #2: Create a Pet Manager
 Implement a class called `PetManager` that manages multiple pets:
 
@@ -53,26 +35,6 @@ Implement a class called `PetManager` that manages multiple pets:
 - `removePet(name)`: Removes a pet by name.
 - `getPets()`: Returns the array of pets.
 
-### Example:
-```javascript
-class PetManager {
-    constructor() {
-        this.pets = [];
-    }
-
-    addPet(pet) {
-        this.pets.push(pet);
-    }
-
-    removePet(name) {
-        this.pets = this.pets.filter(pet => pet.name !== name);
-    }
-
-    getPets() {
-        return this.pets;
-    }
-}
-```
 ## Iteration #3: Build the User Interface
 Using the DOM, create a user interface that includes:
 - Input fields for adding a new pet (name).
